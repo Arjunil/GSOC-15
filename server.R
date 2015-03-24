@@ -24,7 +24,8 @@ shinyServer(
                      "Species" = irisData$Species)
       
       
-      qplot(var1, var2, data=irisData, color = irisData$Species)
+      qplot(var1, var2, data=irisData, color = irisData$Species,
+            xlab = input$varx, ylab = input$vary)
     })
   }
 )
